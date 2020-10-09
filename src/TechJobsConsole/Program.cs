@@ -125,10 +125,10 @@ namespace TechJobsConsole
             {
                 foreach (Dictionary<string, string> item in someJobs)
                 {
-                    Console.WriteLine("*****");
+                    Console.WriteLine("\n*****");
                     foreach (var key in item.Keys)
                     {
-                        Console.WriteLine($"{key}:{item[key]}");
+                        Console.WriteLine($"{key}: {item[key]}");
                     }
                     Console.WriteLine("*****");
                 }
