@@ -14,7 +14,7 @@ namespace TechJobsConsole
         public static List<Dictionary<string, string>> FindAll()
         {
             LoadData();
-            return AllJobs.GetRange(0, AllJobs.Count);
+            return new List<Dictionary<string, string>>(AllJobs);
         }
 
         /*
@@ -36,6 +36,7 @@ namespace TechJobsConsole
                     values.Add(aValue);
                 }
             }
+            values.Sort();
             return values;
         }
         public static List<Dictionary<string, string>> FindByValue(string value)
