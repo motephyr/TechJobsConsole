@@ -14,7 +14,7 @@ namespace TechJobsConsole
         public static List<Dictionary<string, string>> FindAll()
         {
             LoadData();
-            return AllJobs;
+            return AllJobs.GetRange(0, AllJobs.Count);
         }
 
         /*
