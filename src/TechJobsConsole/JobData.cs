@@ -48,7 +48,7 @@ namespace TechJobsConsole
             {
                 foreach (var key in row.Keys)
                 {
-                    if (row[key].ToLower().Contains(value.ToLower()))
+                    if (row[key].ToLower().Contains(value))
                     {
                         jobs.Add(row);
                         break;
@@ -69,7 +69,7 @@ namespace TechJobsConsole
 
             foreach (Dictionary<string, string> row in AllJobs)
             {
-                string aValue = row[column];
+                string aValue = row[column].ToLower();
 
                 if (aValue.Contains(value))
                 {
